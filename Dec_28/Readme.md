@@ -7,6 +7,7 @@
 5. Types of recursion: https://www.geeksforgeeks.org/types-of-recursions/ 
 
 6. Function call and stack size from recursion tree.
+
 7. Question: Printing no 1 to n
              Printing no from n to 1
              Finding a element x in an array using recursion.
@@ -16,8 +17,6 @@
              Check if the array  isSorted or not.
              Finding first and last Occurance of a char in "abcdefabcdef"
              Move all X's to end of array.
-             
-
              Recursive Binary search.
              Sum of digits using recursion
 8. Visualising Recursion via tree with eg fib no. 
