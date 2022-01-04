@@ -1,15 +1,14 @@
 
-                        Topic:
+                        ###Topic:
 -------------------------------------------------------
-1. Factorial of a no. 
-2. Finding first and last occurrence of a char in string.
-3. Check if the array is strictly increasing or not.
-4. Move all x's to end of string.
-5. Remove all duplicates chars from a string.
+1. Find pow(a,b) using recursion.
+2. Check palindrome using recursion.
+3. 
+4. Generating all substrings of a string.
+5. Sort the string in O(N).
+6. Function calls with Tree diagram.
+7. Remove all adjacent duplicates chars from a string.
 
+Quiz on Recursion: https://www.geeksforgeeks.org/algorithms-gq/recursion-gq/
 
-7. Merge Sort : why a new algo afterall 
-                External merge sort.
-9. Quick Sort
-10. Which to choose among Quick sort and merge sort. (Pros and cons of both).
 

@@ -10,11 +10,11 @@ public class CheckIncreasing {
             return isSorted(arr, idx + 1);
         } else
             return false;
+
+        // return false;
     }
 
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
-
         int[] arr = { 1, 2, 3, 4, 5 };
         System.out.println(isSorted(arr, 0));
 

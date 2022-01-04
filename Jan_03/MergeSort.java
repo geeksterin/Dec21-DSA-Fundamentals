@@ -1,3 +1,4 @@
+
 /* Java program for Merge Sort */
 public class MergeSort {
     void merge(int a[], int l, int h) {
@@ -9,8 +10,11 @@ public class MergeSort {
         while (i <= mid && j <= h) {
             if (a[i] < a[j])
                 tmp[k++] = a[i++];
-            else
-                tmp[k++] = a[j++];
+            else {
+                tmp[k] = a[j];
+                j++;
+                k++;
+            }
         }
         while (i <= mid) {
             tmp[k++] = a[i++];
@@ -19,6 +23,7 @@ public class MergeSort {
             tmp[k++] = a[j++];
         }
 
+        //copy tmp back to arr.
         for (i = l; i <= h; i++) {
             a[i] = tmp[i];
         }
@@ -38,6 +43,7 @@ public class MergeSort {
             // Merge the sorted halves
             merge(arr, l, r);
         }
+
     }
 
     /* A utility function to print array of size n */

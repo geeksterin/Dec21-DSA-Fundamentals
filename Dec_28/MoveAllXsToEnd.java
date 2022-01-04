@@ -1,7 +1,6 @@
 
 public class MoveAllXsToEnd {
 	static void moveX(String s, int idx, int count, String newString) {
-
 		// Base case
 		if (idx == s.length()) {
 			while (count > 0) {
@@ -14,11 +13,10 @@ public class MoveAllXsToEnd {
 
 		if (s.charAt(idx) == 'x') {
 			++count;
-			moveX(s, idx + 1, count, newString);
 		} else {
 			newString += s.charAt(idx);
-			moveX(s, idx + 1, count, newString);
 		}
+		moveX(s, idx + 1, count, newString);
 	}
 
 	public static void main(String[] args) {
