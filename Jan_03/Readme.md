@@ -1,8 +1,7 @@
                 ###Topic for 3rd Jan 2022
 ---------------------------------------------------------------------------------------
 7. 2 way-Merge Sort : why a new algo afterall 
-                External merge sort.
-
+                      External merge sort.
 
 1,4,5,6,1,3
 

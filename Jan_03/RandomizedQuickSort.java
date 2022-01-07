@@ -1,5 +1,18 @@
+import java.util.Random;
 
-public class QuickSort {
+public class RandomizedQuickSort {
+
+    static void shuffleArray(int[] ar) {
+        Random rnd = new Random();
+        for (int i = ar.length - 1; i > 0; i--) {
+            int index = rnd.nextInt(i + 1);
+            // Simple swap
+            int a = ar[index];
+            ar[index] = ar[i];
+            ar[i] = a;
+        }
+    }
+
     static int partition(int a[], int s, int e) {
         int i = s - 1;
         int j = s;
@@ -32,6 +45,7 @@ public class QuickSort {
 
     public static void main(String args[]) {
         int a[] = { 10, -1, -9, 2, 4, 5, 6, 8, 10, 11, 15 };
+        shuffleArray(a);
         quicksort(a, 0, a.length - 1);
 
         // display
