@@ -26,7 +26,6 @@ class MyQueue {
     public void enQueue(int element) {
         if (isFull()) {
             System.out.println("Queue is full");
-            ;
         } else {
             if (front == -1)
                 front = 0;
@@ -38,20 +37,21 @@ class MyQueue {
     public void deQueue() {
         int element;
         if (isEmpty()) {
-            System.out.println("");
-            ;
+            System.out.println("Queue is empty");
         } else {
             element = arr[front];
+            //Condition for single element present in queue.
             if (front == rear) {
                 front = -1;
                 rear = -1;
-            } else {
+            }
+            //Checks for more than 1 element in queue. 
+            else {
                 front = (front + 1) % size;
             }
             System.out.println(element);
         }
     }
-
 }
 
 public class myQueue {
@@ -61,7 +61,6 @@ public class myQueue {
         que.enQueue(100);
         que.enQueue(200);
         que.enQueue(300);
-        
-
+    
     }
 }
