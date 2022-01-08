@@ -7,11 +7,3 @@
     Note: Please note that the Stack class in Java is a legacy class and inherits from Vector in Java. It is a thread-safe class and hence involves overhead when we do not need thread safety. It is recommended to use ArrayDeque for stack implementation as it is more efficient in a single-threaded environment.
 
 3. Reverse word using stack.
-4. Reverse words in a sentence using stack.
-5. Check balanced parenthesis. ()()((()))
-5. Min stack in O(1) space.
-
-
-
-1. Defining Queues and it's implementation.
-2. 
