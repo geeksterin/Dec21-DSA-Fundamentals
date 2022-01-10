@@ -13,3 +13,5 @@
   -> find the point of cycle formation.
 6. Check if two linked list merge into 1 or not.
 7. Merge two single linked list into 1 list.
+8. Implement stack using linked list.
+9. Implement queue using linked list.
