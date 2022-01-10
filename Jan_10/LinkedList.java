@@ -1,13 +1,8 @@
-
 import java.io.*;
 
-// Java program to implement
-// a Singly Linked List
 public class LinkedList {
-
 	Node head; // head of list
 	static class Node {
-
 		int data;
 		Node next;
 
@@ -31,12 +26,12 @@ public class LinkedList {
 		else {
 			// Else traverse till the last node
 			// and insert the new_node there
-			Node last = list.head;
-			while (last.next != null) {
-				last = last.next;
+			Node curr = list.head;
+			while (curr.next != null) {
+				curr = curr.next;
 			}
 			// Insert the new_node at last node
-			last.next = new_node;
+			curr.next = new_node;
 		}
 
 		// Return the list by head

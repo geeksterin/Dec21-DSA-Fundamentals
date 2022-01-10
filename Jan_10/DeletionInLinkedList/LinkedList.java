@@ -63,14 +63,11 @@ public class LinkedList {
 	}
 
 	// **************DELETION BY KEY**************
-
 	// Method to delete a node in the LinkedList by KEY
 	public static LinkedList deleteByKey(LinkedList list, int key)
 	{
 		// Store head node
 		Node currNode = list.head, prev = null;
-
-		//
 		// CASE 1:
 		// If head node itself holds the key to be deleted
 

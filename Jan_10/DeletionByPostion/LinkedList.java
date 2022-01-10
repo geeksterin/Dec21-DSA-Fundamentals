@@ -132,7 +132,6 @@ public class LinkedList {
 	}
 
 	// **************DELETION AT A POSITION**************
-
 	// Method to delete a node in the LinkedList by POSITION
 	public static LinkedList
 	deleteAtPosition(LinkedList list, int index)
@@ -194,7 +193,6 @@ public class LinkedList {
 		//
 		// CASE 3: The index is greater than the size of the
 		// LinkedList
-		//
 		// In this case, the currNode should be null
 		if (currNode == null) {
 			// Display the message
@@ -231,10 +229,7 @@ public class LinkedList {
 		// Print the LinkedList
 		printList(list);
 
-		//
 		// ******DELETION BY KEY******
-		//
-
 		// Delete node with value 1
 		// In this case the key is ***at head***
 		deleteByKey(list, 1);
