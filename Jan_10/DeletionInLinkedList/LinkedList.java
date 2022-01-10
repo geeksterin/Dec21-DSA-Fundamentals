@@ -1,14 +1,7 @@
 import java.io.*;
 
-// Java program to implement
-// a Singly Linked List
 public class LinkedList {
-
 	Node head; // head of list
-
-	// Linked list Node.
-	// Node is a static nested class
-	// so main() can access it
 	static class Node {
 
 		int data;
@@ -23,8 +16,7 @@ public class LinkedList {
 	}
 
 	// Method to insert a new node
-	public static LinkedList insert(LinkedList list,
-									int data)
+	public static LinkedList insert(LinkedList list, int data)
 	{
 		// Create a new node with given data
 		Node new_node = new Node(data);
@@ -73,8 +65,7 @@ public class LinkedList {
 	// **************DELETION BY KEY**************
 
 	// Method to delete a node in the LinkedList by KEY
-	public static LinkedList deleteByKey(LinkedList list,
-										int key)
+	public static LinkedList deleteByKey(LinkedList list, int key)
 	{
 		// Store head node
 		Node currNode = list.head, prev = null;
@@ -92,12 +83,8 @@ public class LinkedList {
 			// Return the updated List
 			return list;
 		}
-
-		//
 		// CASE 2:
 		// If the key is somewhere other than at head
-		//
-
 		// Search for the key to be deleted,
 		// keep track of the previous node
 		// as it is needed to change currNode.next
@@ -114,15 +101,12 @@ public class LinkedList {
 			// Since the key is at currNode
 			// Unlink currNode from linked list
 			prev.next = currNode.next;
-
 			// Display the message
 			System.out.println(key + " found and deleted");
 		}
 
 		//
 		// CASE 3: The key is not present
-		//
-
 		// If key was not present in linked list
 		// currNode should be null
 		if (currNode == null) {

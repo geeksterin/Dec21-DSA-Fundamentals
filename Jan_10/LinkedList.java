@@ -24,7 +24,6 @@ public class LinkedList {
 	{
 		// Create a new node with given data
 		Node new_node = new Node(data);
-		new_node.next = null;
 
 		if (list.head == null) {
 			list.head = new_node;
@@ -48,7 +47,6 @@ public class LinkedList {
 	public static void printList(LinkedList list)
 	{
 		Node currNode = list.head;
-
 		System.out.print("LinkedList: ");
 
 		// Traverse through the LinkedList
@@ -62,14 +60,10 @@ public class LinkedList {
 	}
 
 	// **************MAIN METHOD**************
-
-	// method to create a Singly linked list with n nodes
 	public static void main(String[] args)
 	{
 		/* Start with the empty list. */
 		LinkedList list = new LinkedList();
-
-		//
 		// ******INSERTION******
 		//
 		// Insert the values
