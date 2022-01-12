@@ -47,7 +47,9 @@ Diameter of a tree.
 ***Array representation of CBT***
 left child = (2*root)+1
 right child = (2*root)+2;
-parent = floor((i-1)/2))
+parent = floor((i-1)/2)
+//https://www.geeksforgeeks.org/binary-tree-array-implementation/
+
 
 
 **Problems on Binary Trees.**
