@@ -8,7 +8,6 @@
     -> Search.
 3. Double Linked List aka doubly linkedlist.
 
-
 4. Print the kth element from the end in a singly linkedlist.
 5. Detect a cycle in a linked list.
   -> find the point of cycle formation.
@@ -16,4 +15,6 @@
 7. Merge two single linked list into 1 list.
 8. Implement stack using linked list.
 9. Implement queue using linked list. 
+
+
 

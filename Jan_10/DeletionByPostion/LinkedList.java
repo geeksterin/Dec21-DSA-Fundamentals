@@ -138,8 +138,6 @@ public class LinkedList {
 	{
 		// Store head node
 		Node currNode = list.head, prev = null;
-
-		//
 		// CASE 1:
 		// If index is 0, then head node itself is to be
 		// deleted
@@ -162,7 +160,6 @@ public class LinkedList {
 		//
 		// The counter
 		int counter = 0;
-
 		// Count for the index to be deleted,
 		// keep track of the previous node
 		// as it is needed to change currNode.next
