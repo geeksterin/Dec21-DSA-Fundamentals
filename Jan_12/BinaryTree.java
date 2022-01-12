@@ -17,9 +17,11 @@ public class BinaryTree
 {
 
 	static int levelSoFar=0;
+
+
+
 	public static void preorder(Node root) {
 		if(root==null) return;
-		
 		System.out.print(root.key+",");
 		preorder(root.left);
 		preorder(root.right);
@@ -27,16 +29,14 @@ public class BinaryTree
 	
 	public static void inorder(Node root) {
 		if(root==null) return;
-		
 		inorder(root.left);
 		System.out.print(root.key+",");
 		inorder(root.right);
 		
 	}
-	
+    
 	public static void postOrder(Node root) {
 		if(root==null) return;
-		
 		postOrder(root.left);
 		postOrder(root.right);
 		System.out.print(root.key+",");
@@ -114,10 +114,7 @@ public class BinaryTree
 		}
 	}
 	
-	
-	
-
-	public static void main(String[] args)
+    public static void main(String[] args)
 	{
 		Node root = new Node(1);
 
@@ -136,10 +133,9 @@ public class BinaryTree
 		/* 2 and 3 become left and right children of 1
 		   1
 		 /	 \
-		2	 3
+		2	  3
 		/ \	 / \
 	null null null null */
-
 
 		root.left.left = new Node(4);
 		root.left.right = new Node(5);
@@ -152,7 +148,6 @@ public class BinaryTree
 			4  5   null  6
 		   / \
 		 null null
-		 
 		*/
 		
 //		PrintKthLevel(root, 2);

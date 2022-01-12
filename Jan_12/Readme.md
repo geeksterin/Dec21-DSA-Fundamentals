@@ -18,15 +18,18 @@
 				  it is called a terminal or leaf node of a tree.
 15. Degree of a Tree: max degree of any node
 
-16. height of Node : The height of a node is the number of edges from the node to the deepest leaf. 
-				 The height of a tree is a height of the root.
-
-Height of Tree : Height of root node.
-Depth of a tree : Length of path from root to that node.
-Diameter of a tree.
+16. Height of Node : The height of a node is the number of edges from the node to the deepest leaf. 
+17. Height of Tree : Height of root node.
+18. Depth of a tree : Length of path from root to that node.
 
 #nodes  = (n-1) edges
 
+**What is Tree?**
+------------------
+A tree is a acylic graph.
+
+***What is a binary Tree?***
+It's a acyclic graph, with rooted node with none or upto 2 children.
 
 **Binary Tree Properties**
 ----------------------------
@@ -38,11 +41,11 @@ Diameter of a tree.
 ***Binary Tree Types:***
 1. Full/Strict/Proper Binary Tree :  BinaryTree with 0 or 2 children. => #internal node +1 = left node.
                                      A full binary tree.is a binary tree in which each node has exactly zero or two children.
-2. Complete Binary Tree : BT with all levels completely filled except the last level and placing of 
-						  nodes MUST be done from Left to right direction.
-3. Perfect Binary Tree : BT with all internal nodes have 2 children and all leaves are at same level.
+2. Complete Binary Tree           : BT with all levels completely filled except the last level and placing of 
+						            nodes MUST be done from Left to right direction.
+3. Perfect Binary Tree            : BT with all internal nodes have 2 children and all leaves are at same level.
 
-4. Left and right skewed Tree.
+4. Left and right skewed Tree.     : Trees which are tilted in one direction are called skewed trees.
 
 ***Array representation of CBT***
 left child = (2*root)+1
@@ -61,6 +64,8 @@ parent = floor((i-1)/2)
 6. Depth of  a tree
 7. Printing all leaves of tree / print non-leaves of a tree
 8. PrintKthLevel
+
+Diameter of a tree.
 
 Print left nodes only (Recursive + Iterative)
 Print right nodes only.(Recursive + Iterative)
