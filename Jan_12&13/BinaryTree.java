@@ -1,3 +1,5 @@
+import java.util.*;
+
 /* Class containing left and right child of current
 node and key value*/
 class Node
@@ -17,9 +19,6 @@ public class BinaryTree
 {
 
 	static int levelSoFar=0;
-
-
-
 	public static void preorder(Node root) {
 		if(root==null) return;
 		System.out.print(root.key+",");
@@ -50,24 +49,45 @@ public class BinaryTree
         else
         {
             /* compute the depth of each subtree */
-            int lDepth = getHeight(node.left);
-            int rDepth = getHeight(node.right);
+            int lheight = getHeight(node.left);
+            int rheight = getHeight(node.right);
   
             /* use the larger one */
-            if (lDepth > rDepth)
-                return (lDepth + 1);
+            if (lheight >= rheight)
+                return (lheight + 1);
              else
-                return (rDepth + 1);
+                return (rheight + 1);
         }
     }
+
+	static void print_leafNodes(Node root){
+		if(root == null) return;
+
+		if(root.left == null && root.right==null){
+			System.out.println("LeafNode:"+ root.key);
+		}
+		print_leafNodes(root.left);
+		print_leafNodes(root.right);
+	}
+
+	// static void count_leafNodes(Node root){
+	// 	if(root == null) return;
+		
+	// 	if(root.left == null && root.right==null){
+	// 		return 1;
+	// 	}
+	// 	int leftCount = count_leafNodes(root.left);
+	// 	int rightCount = count_leafNodes(root.right);
+	// 	return leftCount+ rightCount;
+	// }
 
 	static int get_count(Node root){
 	    if(root==null){
 	        return 0;
 	    }
-	    else{
-	        return 1+ get_count(root.left)+ get_count(root.right);
-	    }
+		int leftCount = get_count(root.left);
+		int rightCount = get_count(root.right);
+	    return 1+ leftCount + rightCount;
 	}
 		
 	//Printing the left view nodes only.
@@ -86,8 +106,6 @@ public class BinaryTree
 	
 	//Try for rightView
 	
-	
-	
 	//level order traversal : Iterative way.
 	//https://www.geeksforgeeks.org/level-order-tree-traversal/
 	
@@ -105,6 +123,8 @@ public class BinaryTree
 	
 	
 	//level order traversal : Recursive way
+	//TC: O(N+h)
+	//SC: O(depth)
 	static void levelTraversal(Node root) {
 		int h = getHeight(root);
 		
@@ -113,7 +133,49 @@ public class BinaryTree
 			System.out.println();
 		}
 	}
-	
+
+	static void LevelOrderTraversal(Node root) {
+		Queue<Node> q = new LinkedList<>();
+		q.add(root);
+
+		while(!q.isEmpty()){
+			int k = q.size();
+			while(k>0){
+				Node front = q.poll();
+				if(front.left!=null){
+					q.add(front.left);
+				}
+				if(front.right!=null){
+					q.add(front.right);
+				}
+				System.out.print(front.key+",");
+				k--;
+			}
+			System.out.println();
+		}
+	}
+	static void LeftViewOfTree(Node root) {
+		Queue<Node> q = new LinkedList<>();
+		q.add(root);
+
+		while(!q.isEmpty()){
+			int k = q.size();
+			for(int i=0;i<k;i++){
+				Node front = q.poll();
+				if(i==0){
+					System.out.print(front.key+",");
+				}
+				
+				if(front.left!=null){
+					q.add(front.left);
+				}
+				if(front.right!=null){
+					q.add(front.right);
+				}
+			}
+			System.out.println();
+		}
+	}
     public static void main(String[] args)
 	{
 		Node root = new Node(1);
@@ -150,9 +212,13 @@ public class BinaryTree
 		 null null
 		*/
 		
-//		PrintKthLevel(root, 2);
-		levelTraversal(root);
 		
+		// System.out.println(get_count(root));
+		// print_leafNodes(root);
+		// levelTraversal(root);
+		// PrintKthLevel(root, 2);
+		// LevelOrderTraversal(root);
+		LeftViewOfTree(root);
 //		leftView(root,0);
 //		preorder(root);
 //		System.out.println();

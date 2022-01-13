@@ -29,7 +29,7 @@
 A tree is a acylic graph.
 
 ***What is a binary Tree?***
-It's a acyclic graph, with rooted node with none or upto 2 children.
+It's a acyclic graph, having rooted node with none or upto 2 children.
 
 **Binary Tree Properties**
 ----------------------------
@@ -55,7 +55,7 @@ parent = floor((i-1)/2)
 
 
 **Problems on Binary Trees.**
-1. Inorder , pre-order, post-order using recursion.
+1. Inorder,pre-order, post-order using recursion.
 2. getCount of nodes.
 3. getLeaf counts
 4. getSum of nodes.
@@ -63,7 +63,8 @@ parent = floor((i-1)/2)
 6. Depth of  a tree
 7. Printing all leaves of tree / print non-leaves of a tree
 8. PrintKthLevel
-9.  https://leetcode.com/problems/path-sum/
+9. Level order traversal (Recursive + Iterative)
+10.  https://leetcode.com/problems/path-sum/
 10. https://leetcode.com/problems/average-of-levels-in-binary-tree/
 11. https://leetcode.com/problems/leaf-similar-trees/
 12.  LCA of a binary Tree.
@@ -72,6 +73,6 @@ Diameter of a tree.
 
 Print left nodes only (Recursive + Iterative)
 Print right nodes only.(Recursive + Iterative)
-Level order traversal (Recursive + Iterative)
+
 
 
