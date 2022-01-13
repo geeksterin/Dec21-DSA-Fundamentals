@@ -1,5 +1,5 @@
-**Terms**
-----------------------------
+**Glossary in Tree DataStructure**
+-----------------------------------
 1. Nodes
 2. Edge 
 3. root node
@@ -54,7 +54,6 @@ parent = floor((i-1)/2)
 //https://www.geeksforgeeks.org/binary-tree-array-implementation/
 
 
-
 **Problems on Binary Trees.**
 1. Inorder , pre-order, post-order using recursion.
 2. getCount of nodes.
@@ -64,6 +63,10 @@ parent = floor((i-1)/2)
 6. Depth of  a tree
 7. Printing all leaves of tree / print non-leaves of a tree
 8. PrintKthLevel
+9.  https://leetcode.com/problems/path-sum/
+10. https://leetcode.com/problems/average-of-levels-in-binary-tree/
+11. https://leetcode.com/problems/leaf-similar-trees/
+12.  LCA of a binary Tree.
 
 Diameter of a tree.
 
@@ -71,6 +74,4 @@ Print left nodes only (Recursive + Iterative)
 Print right nodes only.(Recursive + Iterative)
 Level order traversal (Recursive + Iterative)
 
-https://leetcode.com/problems/path-sum/
-https://leetcode.com/problems/average-of-levels-in-binary-tree/
-https://leetcode.com/problems/leaf-similar-trees/
+
