@@ -1,4 +1,5 @@
-*Binary Search Tree*
+# Binary Search Tree
+## Operations on BST:
 1. Insertion into BST 
 2. Search in BST
 3. Inorder traversal in BST -> sorted seqeuence
@@ -16,7 +17,7 @@ https://leetcode.com/problems/integer-to-english-words/
 
 
 ***Additinal Resources***
-...
+```
 Comparision between BST and Hashtable: https://www.geeksforgeeks.org/advantages-of-bst-over-hash-table/?ref=lbp
 Quiz on BST : https://www.geeksforgeeks.org/data-structure-gq/binary-search-trees-gq/
-...
+```
