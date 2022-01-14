@@ -1,4 +1,4 @@
-**Glossary in Tree DataStructure**
+## Glossary in Tree DataStructure
 -----------------------------------
 1. Nodes
 2. Edge 
@@ -31,7 +31,7 @@ A tree is a acylic graph.
 ***What is a binary Tree?***
 It's a acyclic graph, having rooted node with none or upto 2 children.
 
-**Binary Tree Properties**
+### Binary Tree Properties
 ----------------------------
 1. Each node has ATMOST 2 children.
 2. Max no of nodes possible at any level 'i' = 2^i.
@@ -67,12 +67,8 @@ parent = floor((i-1)/2)
 10.  https://leetcode.com/problems/path-sum/
 10. https://leetcode.com/problems/average-of-levels-in-binary-tree/
 11. https://leetcode.com/problems/leaf-similar-trees/
-12.  LCA of a binary Tree.
-
-Diameter of a tree.
-
-Print left nodes only (Recursive + Iterative)
-Print right nodes only.(Recursive + Iterative)
+12. Print left nodes only (Recursive + Iterative)
+13. Print right nodes only.(Recursive + Iterative)
 
 
 
