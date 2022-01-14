@@ -6,7 +6,7 @@
 3. Inorder traversal in BST -> ALWAYS a Sorted seqeuence
 4. What is Inorder successor and inorder predecesor
    - how to find it.
-5. Deletion in BST.
+5. Deletion in BST : https://www.geeksforgeeks.org/binary-search-tree-set-2-delete/?ref=lbp
 
 ***Time Complexity on BST***
 1. Insertion -> WC: O(N) , BC : O(lgN).

@@ -1,4 +1,3 @@
-
 public class BinarySearchTree{
     TreeNode root;
     static class TreeNode{
@@ -39,16 +38,16 @@ public class BinarySearchTree{
         _inorder(root.right);
     }
 
-     void KthSmallest(TreeNode root,int k){
-        //left to right inorder traversal.
-        if(root==null) return;
-        KthSmallest(root.left,k);
-        k--;
-        if(k==0){
-            ans = root.val;
-            return;
-        }
-        KthSmallest(root.right,k);
+    TreeNode _LCA(int p, int q){
+        return LCA(root,p,q);
+    }
+    static TreeNode LCA(TreeNode root, int p, int q) {
+        if(root==null) return root;
+        if(root.val<p && root.val<q)
+            return LCA(root->right,p,q);
+        if(root.val>p && root.val>q)
+            return LCA(root->left,p,q);
+        return root;
     }
 
     public static void main(String[] args) {
@@ -68,21 +67,12 @@ public class BinarySearchTree{
         tree.insert(60);
         tree.insert(80);
 
-        tree.inorder();
+        
+        System.out.println("LCA : "+tree._LCA(20,40));
 
-        // https://www.geeksforgeeks.org/binary-search-tree-set-2-delete/?ref=lbp
+        tree.inorder();
 
     }
 
 
 }
-
-
-TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
-        if(!root) return root;
-        if(root->val<p->val and root->val<q->val)
-            return lowestCommonAncestor(root->right,p,q);
-        if(root->val>p->val and root->val>q->val)
-            return lowestCommonAncestor(root->left,p,q);
-        return root;
-    }
