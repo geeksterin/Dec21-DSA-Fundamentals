@@ -26,5 +26,6 @@ public class sortedArrayToBST {
         int arr[] = {1,2,3,4,5,6,7};
         TreeNode root = solve(arr,0,arr.length-1);
         System.out.println(root.val);
+        int3 a = 10;
     }
 }
