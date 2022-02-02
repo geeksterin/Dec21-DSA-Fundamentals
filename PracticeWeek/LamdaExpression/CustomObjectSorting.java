@@ -1,3 +1,4 @@
+package PracticeWeek.LamdaExpression;
 import java.util.*;
 
 class Pair {
