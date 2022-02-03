@@ -32,9 +32,6 @@
 	  }
 	  return sum;
 	}
-
---------------------------------------------------------------------------------------
-
 --------------------------------------------------------------------------------------
 	static int m3(int n) {	
 		int count = 0;
@@ -120,10 +117,6 @@
     Stirling’s approximation (or Stirling’s formula). 
     log n! = n*log n - n = O(n*log(n)) 
     ```
-
-    
+--------------------------------------------------------------------------------------
+### Quiz on Asymtotic analysis:      
 - https://www.geeksforgeeks.org/practice-questions-time-complexity-analysis/
-
- *  https://www.geeksforgeeks.org/algorithms-gq/searching-and-sorting-gq/
- *  Problems : https://www.geeksforgeeks.org/practice-questions-time-complexity-analysis/
- *  https://www.geeksforgeeks.org/analysis-of-algorithms-set-4-analysis-of-loops/?ref=lbp
