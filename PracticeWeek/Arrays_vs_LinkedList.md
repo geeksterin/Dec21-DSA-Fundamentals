@@ -1,10 +1,3 @@
-### Hashing: 
--   It's a one way function which converts any arbitary length input into a fixed length output.
-
-### HashTables:
--   Defination 1: It's a data structure which stores things in key value pair.
--   Defination 2: It's a associative array which makes use of hashing to store values using the hash output as key.
-
 ## Arrays vs Linked List.
 ### Strength of Array:
 -   Memory allocation is contiguous , ie searching is fast when compared to LinkedList
@@ -17,7 +10,8 @@
         Sorted Array:  BS(lgN) + Shifting of elements(O(N)) + Inserting at correct loc (O(1)) => TC O(N).
 -   ## Deletion:
         Sorted and Unsorted Array: If deleting at end => O(1), BUT if deleting in middle/anywhere else apart from last TC O(N) this is due to shifting of elements to fill the gap/hole.
--   ## Cache Friendly: 
+-   ## Cache Friendly:
+        Arrays are cache friendly as they follow locality of reference and spatial locality.
 
 ### Limitations of Arrays:
 -   Fixed length (u need to know things in advance).
