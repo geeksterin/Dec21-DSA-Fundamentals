@@ -5,6 +5,7 @@
  3. Why asymtotic notation required and their terms.
     - 	a. upper bound, lower bound, tight bound 
 
+--------------------------------------------------------------------------------------
 	void m1(){
 		  int a = 4;
 		  int b = 6;
@@ -59,7 +60,15 @@
 			// some O(1) expressions
 		}
 	}
+--------------------------------------------------------------------------------------
+### O(LgN):
+        for (int i = 1; i <=n; i *= c) {
+            // some O(1) expressions
+        }
 
+        for (int i = n; i > 0; i /= c) {
+            // some O(1) expressions
+        }
 --------------------------------------------------------------------------------------
 	static void m5(int n) {
 		
